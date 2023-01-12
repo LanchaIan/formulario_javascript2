@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="stilo.css">
+    <script src="validacion.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="personal">
+            <form class="formulario_personal" action="">
+                <label class="apellidos" for="Apellidos">Apellidos</label>
+                <input class="apellidos_input" type="text" id="apellidos"><br>
+                <label class="nombre" for="Nombre">Nombre</label>
+                <input class="nombre_input" type="text" id="nombre"><br>
+                <label class="sexo" for="Sexo">Sexo</label>
+                <a class="espacio"></a>
+                <div class="hombre">
+                    <input type="radio" id="hombre" name="sexo" value="hombre">
+                    <label for="hombre">hombre</label><br>
+                </div>
+                <div class="mujer">
+                    <input type="radio" id="mujer" name="sexo" value="mujer">
+                    <label for="mujer">Mujer</label><br>
+                </div>
+                <label class="correo" for="correo">Correo electrónico</label>
+                <input class="correo_input" type="email" id="correo"><br>
+    
+            </form>
+        </div>
+        <div class="seleccion">
+            <form action="personas">
+                    <select name="personas" id="personas" form="personas">
+                    <option value="buscador">1</option>
+                    <option value="publicidad">2</option>
+                    <option value="amigo">3</option>
+                </select>
+            </form>
+        </div>
+        <div class="informacion">
+            <form action="informacion">
+                <label for="camino">¿Cómo llegó hasta aquí?:</label>
+                <select name="camino" id="camino" form="informacion">
+                    <option value="buscador">A través de un buscador</option>
+                    <option value="publicidad">Publicidad</option>
+                    <option value="amigo">A través de un amigo/conocido</option>
+                </select>
+                <br>
+                <label for="mas_info">¿Desearía saber más informacion sobre: ?</label>
+                <br>
+                <label>Material audiovisual</label>
+                <input type="checkbox" id="mat_audiovi">
+                <br>
+                <label>Textos electrónicos</label>
+                <input type="checkbox" id="textos_elec">
+                <br>
+                <label>Libros de texto</label>
+                <input type="checkbox" id="libros">
+            </form>
+        </div>
+        <div class="botones">
+            <form action="">
+                <input class="button" type="button" value="Visualizar datos" onClick="conseguir_datos()">
+                <br>
+                <input class="button" type="button" value="Añadir" onClick="añadir()">
+                <br>
+                <input class="button" type="button" value="Eliminar" onclick="conseguir_datos()">
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

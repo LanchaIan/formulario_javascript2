@@ -1,0 +1,64 @@
+.personal {grid-area: personal;}
+.seleccion {grid-area: seleccion;}
+.informacion {grid-area: informacion;}
+.apellidos {grid-area: apellidos;}
+.apellidos_input {grid-area: apellidos_input;}
+.nombre {grid-area: nombre;}
+.nombre_input {grid-area: nombre_input;}
+.sexo {grid-area: sexo;}
+.espacio {grid-area: espacio;}
+.hombre {grid-area: hombre;}
+.mujer {grid-area: mujer;}
+.correo {grid-area: correo;}
+.correo_input {grid-area: correo_input;}
+
+body{
+    background-color: rgb(168, 158, 158);
+}
+
+div{
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    height: 120px;
+}
+
+.contenedor{
+    border-color: rgb(168, 158, 158);
+    display: grid;
+    grid-template-areas: 
+    'personal personal seleccion'
+    'informacion informacion button';
+}
+
+.formulario_personal{
+    display: grid;
+    grid-template-areas: 
+    'apellidos apellidos_input'
+    'nombre nombre_input'
+    'sexo hombre'
+    'espacio mujer'
+    'correo correo_input';
+
+}
+
+input{
+    margin-right: 20px;
+}
+
+.hombre{
+    border-color: rgb(168, 158, 158);
+    height: 20px;
+}
+.mujer{
+    border-color: rgb(168, 158, 158);
+    height: 20px;
+}
+
+.botones{
+    text-align: center;
+}
+
+.button{
+    margin-top: 10px;
+}
