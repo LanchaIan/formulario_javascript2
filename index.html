@@ -13,7 +13,7 @@
         <div class="personal">
             <form class="formulario_personal" action="">
                 <label class="apellidos" for="Apellidos">Apellidos</label>
-                <input class="apellidos_input" type="text" id="apellidos"><br>
+                <input class="apellidos_input" type="text" id="apellidos" required><br>
                 <label class="nombre" for="Nombre">Nombre</label>
                 <input class="nombre_input" type="text" id="nombre"><br>
                 <label class="sexo" for="Sexo">Sexo</label>
@@ -33,10 +33,8 @@
         </div>
         <div class="seleccion">
             <form action="personas">
-                    <select name="personas" id="personas" form="personas">
-                    <option value="buscador">1</option>
-                    <option value="publicidad">2</option>
-                    <option value="amigo">3</option>
+                    <select name="personas" id="personas" form="personas" size="6">
+                    
                 </select>
             </form>
         </div>
@@ -45,8 +43,9 @@
                 <label for="camino">¿Cómo llegó hasta aquí?:</label>
                 <select name="camino" id="camino" form="informacion">
                     <option value="buscador">A través de un buscador</option>
-                    <option value="publicidad">Publicidad</option>
-                    <option value="amigo">A través de un amigo/conocido</option>
+                    <option value="enlace">Mediante un enlace desde otra página.</option>
+                    <option value="url">Le indicaron la URL de la página</option>
+                    <option value="amigo">Al azar.</option>
                 </select>
                 <br>
                 <label for="mas_info">¿Desearía saber más informacion sobre: ?</label>
@@ -63,11 +62,11 @@
         </div>
         <div class="botones">
             <form action="">
-                <input class="button" type="button" value="Visualizar datos" onClick="conseguir_datos()">
+                <input class="button" type="button" value="Visualizar datos" onClick="ver_datos()">
                 <br>
                 <input class="button" type="button" value="Añadir" onClick="añadir()">
                 <br>
-                <input class="button" type="button" value="Eliminar" onclick="conseguir_datos()">
+                <input class="button" type="button" value="Eliminar" onclick="borrar_datos()">
                 <br>
             </form>
         </div>

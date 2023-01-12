@@ -62,3 +62,9 @@ input{
 .button{
     margin-top: 10px;
 }
+
+#personas{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 300px;
+}
